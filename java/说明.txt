@@ -1,0 +1,68 @@
+https://clientarea.skibidisigmahosting.com/panel?routeName=servers
+gmail
+Gj@147262361
+Java 类游戏
+下载压缩包：java.zip
+
+原 server.jar 改名为：LICENSE.jar
+
+上传并解压 java.zip
+
+给 start.sh 文件赋权：chmod 777 start.sh
+
+修改 start.sh 中变量即可运行
+代码13行，修改成重新命名的游戏名一样
+
+注意事项：
+
+启动脚本中的文件名需和压缩包中的实际文件名一致
+
+原版游戏文件名应与 start.sh 脚本中倒数第二行启动命令对应
+
+节点信息保存在 world 文件夹内的 sub.txt
+
+控制台输出的 base64 编码字符串也是节点信息
+
+代码地址：https://pan.tweek.top/s/G7tp
+
+
+关于 CF 隧道（Cloudflare Tunnel）
+如果不添加 Cloudflare 隧道，每次重启容器都需要重新获取节点，非常麻烦；
+
+如果添加了隧道，就不需要每次重启都重新获取，节点将保持不变。
+
+🌐 添加 Cloudflare 隧道的方法：
+⚠️ 前提：你需要有一个域名。
+没有域名的情况下，添加隧道几乎等于无效，很快就会被封。
+
+登录 Cloudflare，进入左侧菜单点击：
+Zero Trust → 网络（Network） → 打开 Tunnels
+
+点击 "创建隧道" → 选择 Cloudflared
+
+安装命令生成后，复制命令中 Install 后面的部分（即为“隧道值”）
+
+将该隧道值填写到你的 start.sh 脚本中对应位置
+
+绑定域名，并确保：
+
+域名填写到 start.sh 中
+
+绑定时设置的端口号与 start.sh 中保持一致
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
